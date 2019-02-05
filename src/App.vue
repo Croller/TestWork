@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div id="nav-main">
+        <router-link to="/">Home</router-link>
+      </div>
+      <router-link to="/table">Test 1</router-link>
+      <!-- <router-link to="/test_1">Test 1</router-link> | -->
     </div>
     <router-view/>
   </div>
 </template>
-
-<style lang="scss">
+<style lang="stylus">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +26,9 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+  #nav-main {
+    margin-bottom: 10px;
   }
 }
 </style>

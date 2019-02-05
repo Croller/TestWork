@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import Table from './components/Test_1/Table.vue';
+import Info from './components/Test_1/Info.vue';
 
 Vue.use(Router);
 
@@ -12,6 +14,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: Table,
+    },
+    {
+      path: '/info/ship/:id',
+      name: 'info',
+      component: Info,
     },
     {
       path: '/about',
